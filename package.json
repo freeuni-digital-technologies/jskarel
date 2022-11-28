@@ -4,6 +4,7 @@
   "description": "Karel Implementation in Javascript",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "homepage": "",
   "scripts": {
     "test": "ts-mocha test/*.test.ts",
     "watch": "ts-mocha --reporter min -w test/*test.ts --watch-files test/*test.ts,src/**/*.ts",
@@ -18,7 +19,9 @@
     "@types/mocha": "^7.0.2",
     "@types/node": "^13.9.8",
     "chai": "^4.2.0",
+    "istanbul-badges-readme": "^1.8.4",
     "mocha": "^7.0.0",
+    "nyc": "^15.1.0",
     "ts-mocha": "^7.0.0",
     "typescript": "^3.8.3"
   }
