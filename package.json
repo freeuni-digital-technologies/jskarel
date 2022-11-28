@@ -1,6 +1,6 @@
 {
   "name": "jskarel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Karel Implementation in Javascript",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -8,10 +8,17 @@
   "scripts": {
     "test": "ts-mocha test/*.test.ts",
     "watch": "ts-mocha --reporter min -w test/*test.ts --watch-files test/*test.ts,src/**/*.ts",
+    "build": "tsc",
     "coverage": "nyc yarn test && rm -r .nyc_output",
-    "build": "tsc"
+    "make-badges": "istanbul-badges-readme",
+    "generate-docs": "ts-readme"
   },
-  "repository": "github.com/iarigby/jskarel",
+  "nyc": {
+    "reporter": [
+      "json-summary"
+    ]
+  },
+  "repository": "github.com/freeuni-digital-technologies/jskarel",
   "author": "iarigby <marvinzem@gmail.com>",
   "license": "MIT",
   "devDependencies": {
